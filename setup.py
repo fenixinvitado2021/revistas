@@ -13,16 +13,15 @@ with open(os.path.join(here, "requirements.txt"),'r') as fp:
     requires = str(fp.read()).split('\n'
 
 setup(
-    name='revistas',
-    version=__version__,
+    name="revistas",
+    version=__version__,  # noqa: F821
+    author="RayServer",
+    author_email="susej.mabel2009@gmail.com",
     packages=["revistas"],
     install_requires=requires,
-    description='Client to Libraries',
-    author='RayServer',
     package_data={"": ["LICENSE"],},
-    author_email='susej.mabel2009@gmail.com',
+    url="https://github.com/fenixinvitado2021/revistas",
     license="The Unlicense (Unlicense)",
-    url='https://github.com/fenixinvitado2021/revistas',
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Console",
@@ -39,6 +38,7 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Utilities",
     ],
+    description=("Python 3 library for telegram bots"),
     zip_safe=True,
     python_requires=">=3.6",
     keywords=["telegram", "download", "stream", "bots",],
