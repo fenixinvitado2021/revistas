@@ -1,22 +1,25 @@
 import codecs
 import os
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
+
+#with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
+#    long_description = "\n" + fh.read()
 
 with open(os.path.join(here, "revistas", "version.py")) as fp:
     exec(fp.read())
 
 requires = []
 with open(os.path.join(here, "requirements.txt"),'r') as fp:
-    requires = str(fp.read()).split('\n'
+    requires = str(fp.read()).split('\n')
 
 setup(
     name="revistas",
     version=__version__,  # noqa: F821
     author="RayServer",
-    author_email="susej.mabel2009@gmail.com",
+    author_email="obysoftt@gmail.com",
     packages=["revistas"],
     install_requires=requires,
     package_data={"": ["LICENSE"],},
