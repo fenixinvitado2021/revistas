@@ -11,7 +11,7 @@ pip install revistas
 ```
 - Using revistas in a Python script
 ```
-from revistas import Revistas
+from revistas.client import Revistas
 
 
 client = Revistas("host","username","password")
