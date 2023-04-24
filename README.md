@@ -7,7 +7,7 @@ Client for libraries, author : RayServer
 Revistas requires an installation of Python 3.6 or greater, as well as pip. (Pip is typically bundled with Python 
 To install from the source with pip:
 ```
-pip install revistas
+pip install revs
 ```
 - Using revistas in a Python script
 ```
